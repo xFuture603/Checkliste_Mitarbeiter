@@ -1,5 +1,6 @@
-
-
+#body {
+  background-color: #bdbdbd;
+}
 
 .fixed-nav nav {
     position: fixed;
@@ -16,7 +17,7 @@ html {
     background:#eeeeee;
     font-family:'helvetica neue';
     font-size: 20px;
-    font-weight: 200;
+    font-weight: 150;
   }
   body {
     margin: 0;
@@ -26,7 +27,7 @@ html {
   }
   
   .site-wrap {
-    max-width: 700px;
+    max-width: 1000px;
     margin: 70px auto;
     background:white;
     padding:40px;
@@ -43,8 +44,8 @@ html {
   
   header {
     text-align: center;
-    height:50vh;
-    background:url(#) bottom center no-repeat;
+    height:30vh;
+    background:url(/images/header.jpg) bottom center no-repeat;
     background-size:cover;
     display:flex;
     align-items:center;
@@ -53,12 +54,12 @@ html {
   
   h1 {
     color:white;
-    font-size: 7vw;
+    font-size: 5vw;
     text-shadow: 3px 4px 0 rgba(0,0,0,0.2)
   }
   
   nav {
-    background:black;
+    background:#E20074;
     top:0;
     width: 100%;
     transition:all 0.5s;
