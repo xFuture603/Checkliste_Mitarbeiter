@@ -1,4 +1,6 @@
-#body {
+
+/* Settings for the general page content*/
+.page_content {
   background-color: #bdbdbd;
 }
 
@@ -14,7 +16,7 @@
 
 html {
     box-sizing: border-box;
-    background:#eeeeee;
+    /*background: black;*/
     font-family:'helvetica neue';
     font-size: 20px;
     font-weight: 150;
@@ -44,20 +46,14 @@ html {
   
   header {
     text-align: center;
-    height:30vh;
+    height: 25vh;
     background:url(/images/header.jpg) bottom center no-repeat;
     background-size:cover;
     display:flex;
     align-items:center;
     justify-content: center;
   }
-  
-  h1 {
-    color:white;
-    font-size: 5vw;
-    text-shadow: 3px 4px 0 rgba(0,0,0,0.2)
-  }
-  
+
   nav {
     background:#E20074;
     top:0;
@@ -112,4 +108,13 @@ html {
     transition:all 0.2s;
     text-transform: uppercase;
   }
-  
+
+  .flex_rectangle{
+    width: 100%;
+    background: #ca0164;
+}
+.flex_rectangle:before{
+    content: "";
+    display: block;
+    padding-top: 0%;
+}
