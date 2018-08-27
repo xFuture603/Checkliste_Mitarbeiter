@@ -10,13 +10,14 @@
     <!-- Own style sheet -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/filter.css">
+    <link rel="stylesheet" type="text/css" href="css/progress.css">
     <!--Bootstrap Framework -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   </head>
   <body>
     <!-- Header Text Start -->
     <header>
-      <h1> Checkliste für neue Mitarbeiter</h1>
+      <h1 id="header_text"> Checkliste für neue Mitarbeiter</h1>
     </header>
     <!-- Header Text End -->
     <!-- Navbar Start -->
@@ -32,40 +33,67 @@
       <!-- Navbar End -->
       <div class="site-wrap">
         <!-- Searching area Start -->
+        <p>Filter nach Suchbegriff:</p>
         <div class="flex_rectangle">
-          <p>Filter nach Suchbegriffe:</p>
           <!-- Control buttons Start -->
           <div id="filter_buttons">
             <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-            <button class="btn" onclick="filterSelection('cars')"> Example1</button>
-            <button class="btn" onclick="filterSelection('animals')"> Example2</button>
-            <button class="btn" onclick="filterSelection('fruits')"> Example3</button>
-            <button class="btn" onclick="filterSelection('colors')"> Example4</button>
+            <button class="btn" onclick="filterSelection('example1')"> Example1</button>
+            <button class="btn" onclick="filterSelection('example2')"> Example2</button>
+            <button class="btn" onclick="filterSelection('example3')"> Example3</button>
+            <button class="btn" onclick="filterSelection('example4')"> Example4</button>
+            <br></br>
           </div>
           <!-- Control buttons End -->
+          <!-- Searching Area End -->
+          <div class="container">
+            <div class="filterDiv example1"><button type="button" class="btn btn-default">btn1</button></div>
+            <div class="filterDiv example4 example3"><button type="button" class="btn btn-default">btn2</button></div>
+            <div class="filterDiv example1"><button type="button" class="btn btn-default">btn3</button></div>
+            <div class="filterDiv example4"><button type="button" class="btn btn-default">btn4</button></div>
+            <div class="filterDiv example1 example2"><button type="button" class="btn btn-default">btn5</button></div>
+            <div class="filterDiv example4"><button type="button" class="btn btn-default">btn6</button></div>
+            <div class="filterDiv example2"><button type="button" class="btn btn-default">btn7</button></div>
+            <div class="filterDiv example2"><button type="button" class="btn btn-default">btn8</button></div>
+            <div class="filterDiv example3"><button type="button" class="btn btn-default">btn9</button></div>
+            <div class="filterDiv example3 example2"><button type="button" class="btn btn-default">btn10</button></div>
+            <div class="filterDiv example3"><button type="button" class="btn btn-default">btn11</button></div>
+            <div class="filterDiv example3"><button type="button" class="btn btn-default">btn12</button></div>
+            <div class="filterDiv example2"><button type="button" class="btn btn-default">btn13</button></div>
+          </div>
         </div>
-        <!-- Searching Area End -->
-        <div class="container">
-          <div class="filterDiv cars">BMW</div>
-          <div class="filterDiv colors fruits">Orange</div>
-          <div class="filterDiv cars">Volvo</div>
-          <div class="filterDiv colors">Red</div>
-          <div class="filterDiv cars animals">Mustang</div>
-          <div class="filterDiv colors">Blue</div>
-          <div class="filterDiv animals">Cat</div>
-          <div class="filterDiv animals">Dog</div>
-          <div class="filterDiv fruits">Melon</div>
-          <div class="filterDiv fruits animals">Kiwi</div>
-          <div class="filterDiv fruits">Banana</div>
-          <div class="filterDiv fruits">Lemon</div>
-          <div class="filterDiv animals">Cow</div>
+        <br>
+        <div class="containter">
+          <div class="row">
+            <div class="col-sm">
+              <h3>Überschrift 1</h3>
+            </div>
+            <div class="col-sm">
+              <h3>Visuelle Anzeige</h3>
+              <progress id="progress" value='0' max='100'></progress>
+              <a class='button' data-diff='5'>Progress</a>
+              <!--<input type="checkbox" class="custom-control-input data-diff='25'" id="customCheck1">
+              <label class="custom-control-label data-diff='25'" for="customCheck1">Check this custom checkbox</label>-->
+            </div>
+            <div class="col-sm">
+              <h3>Expand/Check all</h3>
+            </div>
+          </div>
+
+
         </div>
       </div>
-    </div>
-    <script src="js/navbar.js"></script>
-    <script src="js/filter.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
-</html>
+      <!-- Site-wrap End-->
+
+
+      <!-- Script initialisation Start -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="js/progress.js"></script>
+      <script src="js/navbar.js"></script>
+      <script src="js/filter.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      <!-- Script initialisation End -->
+
+      </body>
+      </html>
