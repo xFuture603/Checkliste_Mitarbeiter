@@ -139,7 +139,7 @@ html {
 /* Style for each checkbutton element, because its to large for one grid */
 #input1, #input2, #input3, #input4, #input5, #input6  {
   margin-left: 40px;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 /* Custom checkboy styling */
