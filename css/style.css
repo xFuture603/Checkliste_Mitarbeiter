@@ -1,5 +1,5 @@
 
-/* Settings for the general page content*/
+/* Settings for the general page content */
 .page_content {
   background-color: #bdbdbd;
 }
@@ -26,6 +26,10 @@ html {
   }
   *, *:before, *:after {
     box-sizing: inherit;
+  }
+
+  #filter_text {
+    font-weight: 450;
   }
   
   .site-wrap {
@@ -130,3 +134,36 @@ html {
     padding-top: 0%;
 }
 /* Style for filter via search (only rectangle) End */
+
+
+/* Style for each checkbutton element, because its to large for one grid */
+#input1, #input2, #input3, #input4, #input5, #input6  {
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+/* Custom checkboy styling */
+.custom-checkbox {
+  position: absolute;
+  top: 0;
+  left: 525px;
+  height: 20px;
+  width: 20px;
+  background-color: #eee; 
+}
+
+#checkliste, #checkliste3, #checkliste5  {
+  background-color: #bdbdbd;
+}
+
+#checkliste2, #checkliste4, #checkliste6  {
+  background-color: #eee;
+  border: white;
+  color: black;
+  
+}
+
+/* Styling for the progress bar */
+.progress {
+  margin-top: 15px;
+}
