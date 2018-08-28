@@ -1,15 +1,8 @@
-// changing progressbar when button is clicked
-$(".button").click(function () {
-    animateProgress(parseInt($(this).data('diff')));
+//jQuery call the object and increase or decrease the progressbar
+$('input').on('click', function() {
+    var emptyValue = 0;
+    $('input:checked').each(function() {
+        emptyValue += parseInt($(this).val());
+    });
+    $('.progress-bar').css('width', emptyValue + '%').attr('aria-valuenow', emptyValue);
 });
-
-// animate progress by a step indicated by data-diff
-function animateProgress(diff) {
-    var currValue = $("#progress").val();
-    var toValue = currValue + diff;
-    
-    toValue = toValue < 0 ? 0 : toValue;
-    toValue = toValue > 100 ? 100 : toValue;
-
-    $("#progress").animate({'value': toValue}, 500);
-}
