@@ -166,4 +166,20 @@ html {
 /* Styling for the progress bar */
 .progress {
   margin-top: 15px;
+  margin-right: 85px;
+  margin-left: -100px; 
+
+}
+
+/* Style for the Mailtemplate button */
+#template_button1 {
+  width: 150px;
+  position: relative;
+  left: 30%;
+}
+
+#template_collapse, #template_collapse2, #template_collapse3  {
+  width: 518px;
+  margin-top: -25px;
+  margin-bottom: 5px;
 }
