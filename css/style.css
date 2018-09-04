@@ -1,9 +1,5 @@
 
 /* Settings for the general page content */
-.page_content {
-  background-color: #bdbdbd;
-}
-
 .fixed-nav nav {
     position: fixed;
     box-shadow: 0 5px rgba(0, 0, 0, 1);
@@ -16,7 +12,6 @@
 
 html {
     box-sizing: border-box;
-    /*background: black;*/
     font-family:'helvetica neue';
     font-size: 20px;
     font-weight: 150;
@@ -36,27 +31,17 @@ html {
     max-width: 1000px;
     margin: 70px auto;
     background:white;
-    padding:40px;
+    padding: 40px;
     text-align: justify;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
     transform: scale(0.98);
     transition: transform 0.5s;
   }
-  
+ 
   body.fixed-nav .site-wrap {
     transform: scale(1);
   }
   
-  
-  /*header {
-    text-align: center;
-    height: 25vh;
-    background:url(/images/header.jpg) bottom center no-repeat;
-    background-size:cover;
-    display:flex;
-    align-items:center;
-    justify-content: center;
-  }*/
 
   #header_text {
     text-align: center;
@@ -127,6 +112,7 @@ html {
     border: 0.1px solid black;
     padding-top: 5px;
     padding-left: 5px;
+    padding-bottom: 10px;
 }
 .flex_rectangle:before{
     content: "";
@@ -167,8 +153,11 @@ html {
 .progress {
   margin-top: 15px;
   margin-right: 85px;
-  margin-left: -100px; 
+  margin-left: -100px;
+}
 
+.progress-bar-success {
+  background-color: #E20074; 
 }
 
 /* Style for the Mailtemplate button */
