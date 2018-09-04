@@ -128,6 +128,25 @@ html {
   margin-top: 15px;
 }
 
+/* Style for the "all done!" checkbox and paragraph */
+#check_all {
+  margin-left: 40px;
+  margin-top: 15px;
+  left: 125px;
+  height: 25px;
+  width: 20px;
+  background-color: #eee;
+}
+
+#check_all_paragraph {
+  margin-left: 70px;
+  margin-top: -35px;
+  left: 225px;
+  height: 25px;
+  width: 130px;
+
+}
+
 /* Custom checkboy styling */
 .custom-checkbox {
   position: absolute;

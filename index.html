@@ -25,7 +25,7 @@
     <div class="page_content">
     <nav id="main">
       <ul>
-        <li class="logo"><a href="#">Checklist</a></li>
+        <li class="logo"><a href="#">Checkliste</a></li>
         <li><a href="#">Menüpunkt 1</a></li>
         <li><a href="#">Menüpunkt 2</a></li>
         <li><a href="#">Menüpunkt 3</a></li>
@@ -76,7 +76,10 @@
           </div>
         </div>
         <div class="col-sm">
-          <h3>Expand/Check all</h3>
+          <div class="check_all_complete">
+            <input id="check_all" type="checkbox" onClick="toggle(this)" value="100" />
+            <p id="check_all_paragraph">Alles Erledigt!</p>
+          </div>
         </div>
       </div>
       <!-- List1 with content Start -->
@@ -173,6 +176,7 @@
     <!-- Script initialisation Start -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/progress.js"></script>
+    <script src="js/expand.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/filter.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
